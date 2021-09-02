@@ -93,7 +93,7 @@ curl 'http://162.55.220.72:5005/object_info_3?name=Vadim&age=32&salary=1000' \
   
 2) Написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13
 
-cd /f/QA_VADIMS_COURSES/A_Goldyrev_QA_Vadim_Courses/Homework_one_01.09.2021/main/
+cd /f/QA_VADIMS_COURSES/A_Goldyrev_QA_Vadim_Courses/HW_one_terminal_01_09_2021/main/
 mkdir script
 touch testscript.sh
 chmod +x testscript.sh
@@ -102,7 +102,7 @@ vim testscript.sh
 
 insert
 #! /usr/bin/bash
-cd /f/QA_VADIMS_COURSES/A_Goldyrev_QA_Vadim_Courses/Homework_one_01.09.2021/main/script
+cd /f/QA_VADIMS_COURSES/A_Goldyrev_QA_Vadim_Courses/HW_one_terminal_01_09_2021/main/script
 mkdir a b c
 cd a
 touch {q,w,e}.txt {r,t}.json
