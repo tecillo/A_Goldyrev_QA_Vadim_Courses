@@ -65,6 +65,8 @@ $ head -2 uno.txt
 $ tail -2 uno.txt
 
 19) просмотреть содержимое длинного файла (команда less) изучите как она работает.
+less uno.txt
+
 20) вывести дату и время
 data
 =========
@@ -72,9 +74,42 @@ data
 Задание *
 1) Отправить http запрос на сервер.
 http://162.55.220.72:5005/object_info_3?name=Vadim&age=32&salary=1000
+
+curl GET 'http://162.55.220.72:5005/object_info_3?name=Vadim&age=32&salary=1000'
+
+postman
+curl --location --request GET 'http://162.55.220.72:5005/object_info_3?name=Vadim&age=32&salary=1000'
+
+browser
+curl 'http://162.55.220.72:5005/object_info_3?name=Vadim&age=32&salary=1000' \
+  -H 'Connection: keep-alive' \
+  -H 'Cache-Control: max-age=0' \
+  -H 'Upgrade-Insecure-Requests: 1' \
+  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36' \
+  -H 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9' \
+  -H 'Accept-Language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7' \
+  --compressed \
+  --insecure
+  
 2) Написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13
 
-=====================
-1) Посмотреть где я - pwd
-2) Создать папку - mkdir foldername
-3) Зайти в папку - cd foldername
+cd /f/QA_VADIMS_COURSES/A_Goldyrev_QA_Vadim_Courses/Homework_one_01.09.2021/main/
+mkdir script
+touch testscript.sh
+chmod +x testscript.sh
+which bash
+vim testscript.sh
+
+insert
+#! /usr/bin/bash
+cd /f/QA_VADIMS_COURSES/A_Goldyrev_QA_Vadim_Courses/Homework_one_01.09.2021/main/script
+mkdir a b c
+cd a
+touch {q,w,e}.txt {r,t}.json
+mkdir 1a 2a 3a
+ls -la
+mv r.json t.json 1a
+Esc 
+:wq
+
+./testscript.sh
