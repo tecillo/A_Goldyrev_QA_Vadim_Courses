@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "df835a73-0131-415b-8d3d-2f2b3d256689",
+		"_postman_id": "84b173c2-1e36-42b0-8be0-0d874eec37e7",
 		"name": "02_HW_Postman",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -53,7 +53,6 @@
 					"listen": "test",
 					"script": {
 						"exec": [
-							"\r",
 							"pm.test(\"1) Status code is 200\", function () {\r",
 							"    pm.response.to.have.status(200);\r",
 							"});\r",
@@ -67,6 +66,9 @@
 							"            \"type\": \"object\",\r",
 							"            \"additionalProperties\": false,\r",
 							"            \"properties\": {\r",
+							"            \"u_age\": {\r",
+							"                \"type\": \"integer\"\r",
+							"            },\r",
 							"            \"u_name\": {\r",
 							"                \"type\": \"array\",\r",
 							"                \"items\": [\r",
@@ -79,7 +81,6 @@
 							"                    {\r",
 							"                        \"type\": \"integer\"\r",
 							"                    }\r",
-							"\r",
 							"                ]\r",
 							"            },\r",
 							"            \"u_salary_1_5_year\": {\r",
