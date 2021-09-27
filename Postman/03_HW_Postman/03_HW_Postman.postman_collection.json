@@ -155,7 +155,8 @@
 						{
 							"key": "auth_token",
 							"value": "{{token}}",
-							"type": "text"
+							"type": "text",
+							"disabled": true
 						}
 					]
 				},
@@ -251,7 +252,7 @@
 					]
 				},
 				"url": {
-					"raw": "{{url}}object_info_3?age=32&salary=1000&name=tecillo&auth_token={{token}}",
+					"raw": "{{url}}object_info_3?age=32&salary=1000&name=tecillo",
 					"host": [
 						"{{url}}object_info_3"
 					],
@@ -270,7 +271,8 @@
 						},
 						{
 							"key": "auth_token",
-							"value": "{{token}}"
+							"value": "{{token}}",
+							"disabled": true
 						}
 					]
 				}
@@ -339,35 +341,10 @@
 				"header": [],
 				"body": {
 					"mode": "formdata",
-					"formdata": [
-						{
-							"key": "age",
-							"value": "13",
-							"type": "text",
-							"disabled": true
-						},
-						{
-							"key": "salary",
-							"value": "10",
-							"type": "text",
-							"disabled": true
-						},
-						{
-							"key": "name",
-							"value": "Tor",
-							"type": "text",
-							"disabled": true
-						},
-						{
-							"key": "auth_token",
-							"value": "{{token}}",
-							"type": "text",
-							"disabled": true
-						}
-					]
+					"formdata": []
 				},
 				"url": {
-					"raw": "{{url}}object_info_4?age=32&salary=1000&name=tecillo&auth_token={{token}}",
+					"raw": "{{url}}object_info_4?age=32&salary=1000&name=tecillo",
 					"host": [
 						"{{url}}object_info_4"
 					],
@@ -386,7 +363,8 @@
 						},
 						{
 							"key": "auth_token",
-							"value": "{{token}}"
+							"value": "{{token}}",
+							"disabled": true
 						}
 					]
 				}
@@ -435,7 +413,7 @@
 							"});\r",
 							"// console.log(resp);\r",
 							"// console.log(resp.qa_salary_after_12_months);\r",
-							"// console.log(resp[\"qa_salary_after_1.5_years\"]);\r",
+							"// console.log(resp[\"qa_salary_after_1.5_year\"]);\r",
 							"// console.log(resp[\"qa_salary_after_3.5_years\"]);\r",
 							"\r",
 							"pm.test(\"Salary resp = Salary req\", function () {\r",
@@ -487,7 +465,8 @@
 						{
 							"key": "auth_token",
 							"value": "{{token}}",
-							"type": "text"
+							"type": "text",
+							"disabled": true
 						}
 					]
 				},
