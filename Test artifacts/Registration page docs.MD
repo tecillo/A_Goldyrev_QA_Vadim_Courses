@@ -6,7 +6,7 @@ https://docs.google.com/spreadsheets/d/1Rw7rmzwwu-tnZW6j1FaXzOkAoI-vP20QvivhZUqc
 
 https://docs.google.com/spreadsheets/d/1R2VsvSt8hv7VgFerfegZh-Q7UJ1oyxwjkpi5-XnLQSY/edit#gid=0 
 
-**Registration page requirements:**
+**Registration_page_requirements:**
 
 https://docs.google.com/document/d/173ZhDrypyVYneXcbCCQMB5qvm0YkxaY3AcpgANGyM5Q/edit
 
